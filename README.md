@@ -30,9 +30,23 @@ Spice Simulation
 ![WhatsApp Image 2025-11-18 at 22 47 03_f04e4432](https://github.com/user-attachments/assets/8a1f257a-5350-459e-b053-1041a0e1ffba)
 
 
-Synthesis
+# Synthesis
 
-Floorplanning
+```bash
+run_synthesis
+```
+
+Converts RTL (Verilog) into a gate-level netlist using technology-mapped standard cells.
+
+# Floorplanning
+
+```bash
+init_floorplan
+place_io
+tap_decap_or
+gen_pdn
+```
+Performs the initial physical design setup by generating the floorplan, placing IO pins, inserting tap/decap cells, and constructing the power-delivery network.
 ![WhatsApp Image 2025-11-11 at 11 03 34_e3af908e](https://github.com/user-attachments/assets/72ce4327-3302-4150-9eed-2b7e95b73ae0)
 ![WhatsApp Image 2025-11-11 at 11 55 26_7e5b4736](https://github.com/user-attachments/assets/132ad02f-0288-4554-b92c-86c923bd97bc)
 
